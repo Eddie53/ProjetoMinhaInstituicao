@@ -5,6 +5,8 @@
  */
 package InterfacePACK;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Eddie
@@ -16,6 +18,7 @@ public class TelaDiciplinas extends javax.swing.JFrame {
      */
     public TelaDiciplinas() {
         initComponents();
+        mudaicone();
     }
 
     /**
@@ -39,6 +42,7 @@ public class TelaDiciplinas extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Tela de Disciplinas");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
@@ -72,7 +76,7 @@ public class TelaDiciplinas extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Ofertadas", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Ofertadas", 2, 2, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
 
         diciplinaTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -221,6 +225,10 @@ public class TelaDiciplinas extends javax.swing.JFrame {
                 new TelaDiciplinas().setVisible(true);
             }
         });
+    }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

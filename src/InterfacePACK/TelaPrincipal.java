@@ -5,6 +5,8 @@
  */
 package InterfacePACK;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Eddie
@@ -16,6 +18,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
+        mudaicone();
     }
 
     /**
@@ -37,6 +40,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         sairBT = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Menu Principal");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
@@ -215,6 +219,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
     }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton disciplinasBT;
@@ -227,3 +235,5 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton turmasBT;
     // End of variables declaration//GEN-END:variables
 }
+
+

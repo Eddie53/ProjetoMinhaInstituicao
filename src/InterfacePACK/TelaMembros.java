@@ -5,6 +5,8 @@
  */
 package InterfacePACK;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Eddie
@@ -16,6 +18,7 @@ public class TelaMembros extends javax.swing.JFrame {
      */
     public TelaMembros() {
         initComponents();
+        mudaicone();
     }
 
     /**
@@ -41,6 +44,7 @@ public class TelaMembros extends javax.swing.JFrame {
         apagaalunoBT = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Tela de Membros");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
@@ -74,7 +78,7 @@ public class TelaMembros extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "PROFESSOR", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "PROFESSOR", 2, 2, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
 
         professorBT.setBackground(new java.awt.Color(255, 51, 51));
         professorBT.setText("Professores");
@@ -132,7 +136,7 @@ public class TelaMembros extends javax.swing.JFrame {
         });
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "ALUNO", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "ALUNO", 2, 2, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
         jPanel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
 
         alunosBT.setBackground(new java.awt.Color(255, 51, 51));
@@ -279,6 +283,10 @@ public class TelaMembros extends javax.swing.JFrame {
                 new TelaMembros().setVisible(true);
             }
         });
+    }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -5,6 +5,8 @@
  */
 package InterfacePACK;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Eddie
@@ -16,6 +18,7 @@ public class TelaTurmas extends javax.swing.JFrame {
      */
     public TelaTurmas() {
         initComponents();
+        mudaicone();
     }
 
     /**
@@ -40,6 +43,7 @@ public class TelaTurmas extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Tela de Turmas");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
@@ -73,7 +77,7 @@ public class TelaTurmas extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Turmas", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Turmas", 2, 2, new java.awt.Font("Tahoma", 1, 14), new java.awt.Color(255, 51, 51))); // NOI18N
 
         turmaTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -228,6 +232,10 @@ public class TelaTurmas extends javax.swing.JFrame {
                 new TelaTurmas().setVisible(true);
             }
         });
+    }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

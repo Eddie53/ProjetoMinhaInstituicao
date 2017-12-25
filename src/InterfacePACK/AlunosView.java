@@ -5,6 +5,8 @@
  */
 package InterfacePACK;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Eddie
@@ -16,6 +18,7 @@ public class AlunosView extends javax.swing.JFrame {
      */
     public AlunosView() {
         initComponents();
+        mudaicone();
     }
 
     /**
@@ -50,6 +53,7 @@ public class AlunosView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Tela de Alunos");
         setUndecorated(true);
         setResizable(false);
 
@@ -180,6 +184,10 @@ public class AlunosView extends javax.swing.JFrame {
                 new AlunosView().setVisible(true);
             }
         });
+    }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -1,6 +1,7 @@
 package InterfacePACK;
 
 import InstituicaoPACK.Professor;
+import java.awt.Toolkit;
 import java.util.Random;
 
 
@@ -18,6 +19,7 @@ public class novoProfessorview1 extends javax.swing.JFrame {
      */
     public novoProfessorview1() {
         initComponents();
+        mudaicone();
     }
 
     /**
@@ -38,6 +40,7 @@ public class novoProfessorview1 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Novo Professor");
         setUndecorated(true);
         setResizable(false);
 
@@ -197,6 +200,10 @@ public class novoProfessorview1 extends javax.swing.JFrame {
                 new novoProfessorview1().setVisible(true);
             }
         });
+    }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

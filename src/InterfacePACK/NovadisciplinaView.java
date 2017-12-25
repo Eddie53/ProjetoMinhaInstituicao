@@ -5,6 +5,8 @@
  */
 package InterfacePACK;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author Eddie
@@ -16,6 +18,7 @@ public class NovadisciplinaView extends javax.swing.JFrame {
      */
     public NovadisciplinaView() {
         initComponents();
+        mudaicone();
     }
 
     /**
@@ -38,6 +41,7 @@ public class NovadisciplinaView extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Nova Disciplina");
         setUndecorated(true);
         setResizable(false);
 
@@ -187,6 +191,10 @@ public class NovadisciplinaView extends javax.swing.JFrame {
                 new NovadisciplinaView().setVisible(true);
             }
         });
+    }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

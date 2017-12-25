@@ -1,5 +1,6 @@
 package InterfacePACK;
 
+import java.awt.Toolkit;
 import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -28,6 +29,7 @@ public class ProfessorView extends javax.swing.JFrame {
      */
     public ProfessorView() {
         initComponents();
+        mudaicone();
       
          
        
@@ -72,6 +74,7 @@ public class ProfessorView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("PROJETO MINHA INSTITUIÇÃO - Tela de Professores");
         setUndecorated(true);
         setResizable(false);
 
@@ -205,6 +208,10 @@ public class ProfessorView extends javax.swing.JFrame {
                 new ProfessorView().setVisible(true);
             }
         });
+    }
+    
+    private void mudaicone() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("iconePrograma.png")));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
